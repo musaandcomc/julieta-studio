@@ -33,10 +33,10 @@
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Fraunces (Editorial), Schibsted Grotesk (Titulares/Identidad) & Public Sans (Lectura) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
   <script>
     tailwind.config = {
@@ -53,7 +53,9 @@
           },
           fontFamily: {
             serif: ['Fraunces', 'serif'],
-            sans: ['Work Sans', 'sans-serif'],
+            sans: ['Public Sans', 'sans-serif'],
+            schibsted: ['Schibsted Grotesk', 'sans-serif'],
+            public: ['Public Sans', 'sans-serif']
           }
         }
       }
@@ -69,13 +71,13 @@
         JULIETA <span class="italic font-normal text-wine">Studio</span>
       </a>
       
-      <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase">
+      <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase font-schibsted">
         <a href="#servicios" class="hover:text-wine transition-colors">Servicios</a>
         <a href="#galeria" class="hover:text-wine transition-colors">Trabajos</a>
         <a href="#ubicacion" class="hover:text-wine transition-colors">Ubicación</a>
       </nav>
 
-      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Vi%20su%20web%20y%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider hover:bg-ink hover:text-ivory transition-all duration-300">
+      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Vi%20su%20web%20y%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
         Reservar Turno
       </a>
     </div>
@@ -86,22 +88,22 @@
     <div class="max-w-5xl mx-auto px-6 text-center">
       <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold/40 bg-ivory-muted mb-8">
         <span class="w-2 h-2 rounded-full bg-wine"></span>
-        <span class="text-xs uppercase tracking-widest text-ink/80 font-medium">Home Studio · Barrio Alberdi, José C. Paz</span>
+        <span class="text-xs uppercase tracking-widest text-ink/80 font-medium font-public">Home Studio · Barrio Alberdi, José C. Paz</span>
       </div>
 
       <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-ink leading-[1.1] mb-8">
-        Cuidado corporal y <span class="italic font-normal text-wine">manicura de autor</span> en un espacio único. 
+        Cuidado corporal y <span class="italic font-normal text-wine">manicura de autor</span> en un espacio íntimo.
       </h1>
 
-      <p class="max-w-2xl mx-auto text-lg md:text-xl text-ink/75 font-light leading-relaxed mb-10">
+      <p class="max-w-2xl mx-auto text-lg md:text-xl text-ink/75 font-light leading-relaxed mb-10 font-public">
         Especialistas en Soft Gel, garritas, capping y masajes para renovar tu bienestar con atención personalizada.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20agendar%20un%20turno%20para%20u%C3%B1as%20o%20masajes." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-ink text-ivory text-sm font-semibold tracking-wide hover:bg-wine transition-all duration-300 shadow-md">
+        <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20agendar%20un%20turno%20para%20u%C3%B1as%20o%20masajes." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-ink text-ivory text-sm font-semibold tracking-wide font-schibsted hover:bg-wine transition-all duration-300 shadow-md">
           Pedir Turno por WhatsApp
         </a>
-        <a href="#galeria" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ink/20 text-ink text-sm font-medium hover:border-ink transition-all duration-300">
+        <a href="#galeria" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ink/20 text-ink text-sm font-medium font-public hover:border-ink transition-all duration-300">
           Ver Trabajos Reales
         </a>
       </div>
@@ -111,7 +113,7 @@
   <!-- FIRMA: MUESTRARIO / TIRA DE ESMALTES -->
   <div class="w-full bg-ink py-6 border-y border-gold/30">
     <div class="max-w-5xl mx-auto px-6 flex items-center justify-between gap-4 overflow-x-auto">
-      <span class="text-xs uppercase tracking-widest text-gold/80 font-medium whitespace-nowrap">Paleta de temporada</span>
+      <span class="text-xs uppercase tracking-widest text-gold/80 font-medium whitespace-nowrap font-schibsted">Paleta & Bienestar</span>
       <div class="flex items-center gap-3">
         <div class="w-5 h-8 rounded-t-full bg-ink border border-gold/40 shadow-sm" title="Noir"></div>
         <div class="w-5 h-8 rounded-t-full bg-wine border border-gold/40 shadow-sm" title="Vino Tinto"></div>
@@ -128,10 +130,10 @@
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mb-4">Carta de Tratamientos</h2>
-        <p class="text-ink/70">Estructuras duraderas para tus manos y sesiones corporales relajantes.</p>
+        <p class="text-ink/70 font-public">Estructuras duraderas para tus manos y sesiones corporales relajantes.</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-public">
         
         <!-- Tarjeta 1: Soft Gel -->
         <div class="p-8 rounded-2xl bg-ivory border border-ink/10 relative hover:border-wine/30 transition-all duration-300">
@@ -142,7 +144,7 @@
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
             Extensiones completas con tips de gel de cobertura total. Aportan largo inmediato, ligereza natural y máxima durabilidad sin dañar tu uña.
           </p>
-          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium">
+          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Formas Almond, Coffin, Stiletto</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Acabado liviano y flexible</li>
           </ul>
@@ -157,7 +159,7 @@
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
             Capa de refuerzo sobre la uña natural para protegerla de quiebres y permitir un crecimiento sano con esmaltado semipermanente.
           </p>
-          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium">
+          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Durabilidad extendida</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Protección para uña natural</li>
           </ul>
@@ -172,7 +174,7 @@
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
             Técnicas profundas para eliminar nudos de tensión, aliviar molestias en espalda y cuello, y liberar el estrés diario.
           </p>
-          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium">
+          <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Enfoque cervical, lumbar y dorsal</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Sesiones individuales personalizadas</li>
           </ul>
@@ -187,7 +189,7 @@
           <p class="text-ivory/70 mb-6 text-sm leading-relaxed">
             Estructuras audaces, largas y resistentes (Stiletto, Coffin XL) combinadas con diseños a mano alzada, efectos 3D y aplicaciones personalizadas.
           </p>
-          <ul class="space-y-2 text-xs uppercase tracking-wider text-gold font-medium">
+          <ul class="space-y-2 text-xs uppercase tracking-wider text-gold font-medium font-schibsted">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-ivory"></span> Diseños de autor a mano alzada</li>
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-ivory"></span> Máxima resistencia y largo extremo</li>
           </ul>
@@ -198,14 +200,14 @@
   </section>
 
   <!-- GALERÍA DE TRABAJOS REALES -->
-  <section id="galeria" class="py-24 bg-ivory">
+  <section id="galeria" class="py-24 bg-ivory font-public">
     <div class="max-w-6xl mx-auto px-6">
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
-          <span class="text-xs uppercase tracking-widest text-wine font-semibold">Portafolio & Sets</span>
+          <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Portafolio & Sets</span>
           <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mt-2">Galería de Trabajos</h2>
         </div>
-        <p class="text-ink/70 max-w-md text-sm">
+        <p class="text-ink/70 max-w-md text-sm leading-relaxed">
           Cada diseño y estructura es personalizado según el estilo y la anatomía de cada clienta.
         </p>
       </div>
@@ -216,7 +218,7 @@
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
           <img src="./img/softgelnailart.jpeg" alt="Nail Art de Autor en Soft Gel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs uppercase tracking-widest text-gold font-medium">Nail Art & Soft Gel</span>
+            <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Nail Art & Soft Gel</span>
             <p class="text-ivory font-serif text-lg font-bold">Set Completo con Acabado Brillante</p>
           </div>
         </div>
@@ -225,7 +227,7 @@
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
           <img src="./img/capping.jpeg" alt="Capping Gel Natural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs uppercase tracking-widest text-gold font-medium">Capping Gel</span>
+            <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Capping Gel</span>
             <p class="text-ivory font-serif text-lg font-bold">Esmaltado Semipermanente & Protección</p>
           </div>
         </div>
@@ -234,16 +236,16 @@
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
           <img src="./img/garritas.jpeg" alt="Garritas Esculpidas de Autor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs uppercase tracking-widest text-gold font-medium">Garritas & Estructura</span>
+            <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Garritas & Estructura</span>
             <p class="text-ivory font-serif text-lg font-bold">Diseño esculpido con base blanca y transparente</p>
           </div>
         </div>
 
-        <!-- Foto 4: Masaje relajante -->
+        <!-- Foto 4: Masaje Relajante -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
           <img src="./img/masajes-relajantes.jpg" alt="Sesión de Masaje Relajante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs uppercase tracking-widest text-gold font-medium">Home Studio Relax</span>
+            <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Home Studio Relax</span>
             <p class="text-ivory font-serif text-lg font-bold">Masaje Relajante</p>
           </div>
         </div>
@@ -252,16 +254,16 @@
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
           <img src="./img/masajes-descontracturantes.jpg" alt="Masaje Descontracturante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <span class="text-xs uppercase tracking-widest text-gold font-medium">Bienestar Corporal</span>
+            <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Bienestar Corporal</span>
             <p class="text-ivory font-serif text-lg font-bold">Masaje Descontracturante</p>
           </div>
         </div>
 
         <!-- Foto 6 (Call to Instagram) -->
         <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-8 rounded-2xl bg-ink text-ivory border border-gold/30 hover:border-gold transition-all duration-300 aspect-square text-center group">
-          <span class="text-gold text-xs uppercase tracking-widest font-semibold mb-2">Instagram Feed</span>
+          <span class="text-gold text-xs uppercase tracking-widest font-semibold mb-2 font-schibsted">Instagram Feed</span>
           <p class="font-serif text-2xl font-bold group-hover:text-gold transition-colors mb-4">Ver más sets y videos en vivo</p>
-          <span class="text-xs text-ivory/60 underline">@julietastudio.jcp &rarr;</span>
+          <span class="text-xs text-ivory/60 underline font-public">@julietastudio.jcp &rarr;</span>
         </a>
 
       </div>
@@ -269,14 +271,14 @@
   </section>
 
   <!-- UBICACIÓN & INFO -->
-  <section id="ubicacion" class="py-16 bg-ivory-muted/40 border-t border-ink/10">
+  <section id="ubicacion" class="py-16 bg-ivory-muted/40 border-t border-ink/10 font-public">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
       <div>
-        <span class="text-xs uppercase tracking-widest text-wine font-semibold">Ubicación & Modalidad</span>
+        <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Ubicación & Modalidad</span>
         <h3 class="font-serif text-2xl font-bold text-ink mt-1">Barrio Alberdi, José C. Paz</h3>
         <p class="text-ink/70 text-sm mt-2">Atención privada en Home Studio con turnos programados.</p>
       </div>
-      <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider hover:bg-ink hover:text-ivory transition-all duration-300">
+      <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
         <span>Seguir en Instagram</span>
         <span class="text-wine font-bold">@julietastudio.jcp</span>
       </a>
@@ -289,10 +291,10 @@
       <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-6 text-ivory">
         Reservá tu momento en Julieta Studio.
       </h2>
-      <p class="text-ivory/70 text-lg mb-10 max-w-xl mx-auto font-light">
+      <p class="text-ivory/70 text-lg mb-10 max-w-xl mx-auto font-light font-public">
         Escribinos por WhatsApp para consultar días, horarios disponibles o armar tu pack de masajes y uñas.
       </p>
-      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20para%20un%20turno." target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-4 rounded-full bg-wine text-ivory font-semibold text-sm tracking-wider uppercase hover:bg-wine-light border border-gold/30 transition-all duration-300 shadow-lg">
+      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20para%20un%20turno." target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-4 rounded-full bg-wine text-ivory font-semibold text-sm tracking-wider uppercase font-schibsted hover:bg-wine-light border border-gold/30 transition-all duration-300 shadow-lg">
         Solicitar Turno por WhatsApp
       </a>
     </div>
@@ -306,9 +308,9 @@
   </a>
 
   <!-- FOOTER -->
-  <footer class="py-10 bg-ink border-t border-white/10 text-center text-xs text-ivory/60 space-y-3">
+  <footer class="py-10 bg-ink border-t border-white/10 text-center font-public text-xs text-ivory/60 space-y-3">
     <p>© 2026 Julieta Studio · José C. Paz, Buenos Aires.</p>
-    <p class="text-gold/80 tracking-widest uppercase text-[10px]">
+    <p class="text-gold/80 tracking-widest uppercase text-[10px] font-medium font-schibsted">
       Diseño Web & Social Media por <span class="text-ivory font-bold">Musse & CO</span>
     </p>
   </footer>
