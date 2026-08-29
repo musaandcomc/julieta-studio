@@ -9,15 +9,21 @@
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <meta http-equiv="Permissions-Policy" content="geolocation=(), camera=(), microphone=()" />
 
+  <!-- URL Canónica -->
+  <link rel="canonical" href="https://julietastudio.netlify.app/" />
+
+  <!-- Favicon SVG integrado -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💅</text></svg>" />
+
   <!-- SEO Básico -->
   <title>Julieta Studio | Soft Gel, Garritas & Masajes en José C. Paz</title>
-  <meta name="description" content="Home Studio en Barrio Alberdi, José C. Paz. Especialistas en uñas Soft Gel, Garritas de autor, Capping y Masajes Relajantes/Descontracturantes." />
-  <meta name="keywords" content="uñas jose c paz, soft gel jose c paz, garritas esculpidas, capping barrio alberdi, masajes descontracturantes jose c paz, julieta studio" />
-  <meta name="author" content="Musse & CO" />
+  <meta name="description" content="Home Studio en Barrio Alberdi, José C. Paz. Manicura de autor, uñas Soft Gel, Garritas esculpidas, Capping y Masajes Relajantes con atención personalizada." />
+  <meta name="keywords" content="uñas jose c paz, soft gel jose c paz, garritas esculpidas, capping barrio alberdi, masajes descontracturantes jose c paz, manicura barrio alberdi, julieta studio" />
+  <meta name="author" content="Musse & Co" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph / WhatsApp / Facebook / Instagram -->
-  <meta property="og:type" content="website" />
+  <!-- Open Graph / WhatsApp / Redes -->
+  <meta property="og:type" content="business.business" />
   <meta property="og:url" content="https://julietastudio.netlify.app/" />
   <meta property="og:title" content="Julieta Studio | Manicura de Autor & Bienestar Corporal" />
   <meta property="og:description" content="Atención privada en Home Studio (José C. Paz). Soft Gel, Garritas, Capping y Masajes con turnos programados." />
@@ -30,10 +36,82 @@
   <meta name="twitter:description" content="Soft Gel, Garritas de autor, Capping y Masajes en Barrio Alberdi." />
   <meta name="twitter:image" content="https://julietastudio.netlify.app/img/softgelnailart.jpeg" />
 
+  <!-- Marcado Estructurado JSON-LD (Schema.org LocalBusiness + FAQPage para GEO & Rich Snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HealthAndBeautyBusiness",
+        "@id": "https://julietastudio.netlify.app/#business",
+        "name": "Julieta Studio",
+        "image": "https://julietastudio.netlify.app/img/softgelnailart.jpeg",
+        "url": "https://julietastudio.netlify.app/",
+        "telephone": "+5491160016022",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Barrio Alberdi",
+          "addressLocality": "José C. Paz",
+          "addressRegion": "Buenos Aires",
+          "postalCode": "1665",
+          "addressCountry": "AR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -34.5154,
+          "longitude": -58.7681
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "20:00"
+          }
+        ],
+        "sameAs": [
+          "https://www.instagram.com/julietastudio.jcp/"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://julietastudio.netlify.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Dónde está ubicado el estudio y cómo se accede?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Julieta Studio opera bajo la modalidad Home Studio privado en Barrio Alberdi, José C. Paz, Buenos Aires. La dirección exacta se envía al confirmar la reserva del turno."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cuánto dura un servicio de Soft Gel o Capping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un servicio completo de Soft Gel o Garritas toma entre 90 y 120 minutos, garantizando un acabado prolijo, simétrico y duradero. El servicio de Capping suele tomar entre 60 y 75 minutos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Cómo se reservan los turnos de uñas y masajes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Las reservas se gestionan exclusivamente por WhatsApp coordinando día y horario según disponibilidad de agenda."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   
-  <!-- Google Fonts: Fraunces (Editorial), Schibsted Grotesk (Titulares/Identidad) & Public Sans (Lectura) -->
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Schibsted+Grotesk:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -74,10 +152,11 @@
       <nav class="hidden md:flex items-center gap-8 text-xs font-semibold tracking-widest uppercase font-schibsted">
         <a href="#servicios" class="hover:text-wine transition-colors">Servicios</a>
         <a href="#galeria" class="hover:text-wine transition-colors">Trabajos</a>
+        <a href="#faq" class="hover:text-wine transition-colors">Preguntas Frecuentes</a>
         <a href="#ubicacion" class="hover:text-wine transition-colors">Ubicación</a>
       </nav>
 
-      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Vi%20su%20web%20y%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
+      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Vi%20su%20web%20y%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
         Reservar Turno
       </a>
     </div>
@@ -96,11 +175,11 @@
       </h1>
 
       <p class="max-w-2xl mx-auto text-lg md:text-xl text-ink/75 font-light leading-relaxed mb-10 font-public">
-        Especialistas en Soft Gel, garritas, capping y masajes para renovar tu bienestar con atención personalizada.
+        Especialistas en Soft Gel, garritas esculpidas, capping protector y masajes relajantes para renovar tu bienestar integral con atención personalizada.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-        <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20agendar%20un%20turno%20para%20u%C3%B1as%20o%20masajes." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-8 py-4 rounded-full bg-ink text-ivory text-sm font-semibold tracking-wide font-schibsted hover:bg-wine transition-all duration-300 shadow-md">
+        <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20agendar%20un%20turno%20para%20u%C3%B1as%20o%20masajes." target="_blank" rel="noopener noreferrer nofollow" class="w-full sm:w-auto px-8 py-4 rounded-full bg-ink text-ivory text-sm font-semibold tracking-wide font-schibsted hover:bg-wine transition-all duration-300 shadow-md">
           Pedir Turno por WhatsApp
         </a>
         <a href="#galeria" class="w-full sm:w-auto px-8 py-4 rounded-full border border-ink/20 text-ink text-sm font-medium font-public hover:border-ink transition-all duration-300">
@@ -110,7 +189,7 @@
     </div>
   </section>
 
-  <!-- FIRMA: MUESTRARIO / TIRA DE ESMALTES -->
+  <!-- PALETA / TIRA FIRMA -->
   <div class="w-full bg-ink py-6 border-y border-gold/30">
     <div class="max-w-5xl mx-auto px-6 flex items-center justify-between gap-4 overflow-x-auto">
       <span class="text-xs uppercase tracking-widest text-gold/80 font-medium whitespace-nowrap font-schibsted">Paleta & Bienestar</span>
@@ -129,8 +208,8 @@
   <section id="servicios" class="py-24 bg-ivory-muted/40">
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mb-4">Carta de Tratamientos</h2>
-        <p class="text-ink/70 font-public">Estructuras duraderas para tus manos y sesiones corporales relajantes.</p>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mb-4">Carta de Tratamientos y Manicura</h2>
+        <p class="text-ink/70 font-public">Técnicas avanzadas para el cuidado estético de tus manos y sesiones corporales descontracturantes en José C. Paz.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-public">
@@ -142,11 +221,11 @@
             <h3 class="font-serif text-2xl font-bold text-ink">Soft Gel System</h3>
           </div>
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
-            Extensiones completas con tips de gel de cobertura total. Aportan largo inmediato, ligereza natural y máxima durabilidad sin dañar tu uña.
+            Extensiones completas mediante tips de gel flexible de cobertura completa adheridos con base niveladora. Aportan largo inmediato, acabado liviano y máxima duración de 3 a 4 semanas sin agredir la lámina ungueal.
           </p>
           <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Formas Almond, Coffin, Stiletto</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Acabado liviano y flexible</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Formas: Almond, Coffin, Stiletto, Square</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Acabado natural, liviano y flexible</li>
           </ul>
         </div>
 
@@ -154,14 +233,14 @@
         <div class="p-8 rounded-2xl bg-ivory border border-ink/10 relative hover:border-wine/30 transition-all duration-300">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-3 h-5 rounded-t-full bg-gold"></div>
-            <h3 class="font-serif text-2xl font-bold text-ink">Capping Gel</h3>
+            <h3 class="font-serif text-2xl font-bold text-ink">Capping Gel & Nivelación</h3>
           </div>
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
-            Capa de refuerzo sobre la uña natural para protegerla de quiebres y permitir un crecimiento sano con esmaltado semipermanente.
+            Tratamiento de refuerzo sobre la uña natural que previene escamaciones y quiebres. Crea una barrera protectora ultra resistente que acompaña el crecimiento natural junto a un esmaltado semipermanente de brillo duradero.
           </p>
           <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Durabilidad extendida</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Protección para uña natural</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Alta durabilidad y brillo espejo</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-wine"></span> Crecimiento guiado y protegido</li>
           </ul>
         </div>
 
@@ -172,26 +251,26 @@
             <h3 class="font-serif text-2xl font-bold text-ink">Masajes Relajantes & Descontracturantes</h3>
           </div>
           <p class="text-ink/70 mb-6 text-sm leading-relaxed">
-            Técnicas profundas para eliminar nudos de tensión, aliviar molestias en espalda y cuello, y liberar el estrés diario.
+            Sesiones terapéuticas orientadas a disolver contracturas musculares, aliviar sobrecargas en la zona cervical, dorsal y lumbar, y restaurar la armonía corporal en un ambiente tranquilo y climatizado.
           </p>
           <ul class="space-y-2 text-xs uppercase tracking-wider text-ink/80 font-medium font-schibsted">
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Enfoque cervical, lumbar y dorsal</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Sesiones individuales personalizadas</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Alivio de tensiones y contracturas</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-gold"></span> Atención personalizada en cabina privada</li>
           </ul>
         </div>
 
-        <!-- Tarjeta 4: Garritas (Signature / Destacado) -->
+        <!-- Tarjeta 4: Garritas (Signature) -->
         <div class="p-8 rounded-2xl bg-ink text-ivory border border-gold/30 relative">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-3 h-5 rounded-t-full bg-wine-light"></div>
             <h3 class="font-serif text-2xl font-bold text-gold">Garritas & Nail Art Signature</h3>
           </div>
           <p class="text-ivory/70 mb-6 text-sm leading-relaxed">
-            Estructuras audaces, largas y resistentes (Stiletto, Coffin XL) combinadas con diseños a mano alzada, efectos 3D y aplicaciones personalizadas.
+            Estructuras esculpidas audaces, largas y resistentes. Combinamos técnicas de diseño a mano alzada, encapsulados, relieves 3D y aplicaciones personalizadas para quienes buscan un estilo único y distintivo.
           </p>
           <ul class="space-y-2 text-xs uppercase tracking-wider text-gold font-medium font-schibsted">
             <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-ivory"></span> Diseños de autor a mano alzada</li>
-            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-ivory"></span> Máxima resistencia y largo extremo</li>
+            <li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-ivory"></span> Estructura sólida y largo personalizado</li>
           </ul>
         </div>
 
@@ -205,10 +284,10 @@
       <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
         <div>
           <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Portafolio & Sets</span>
-          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mt-2">Galería de Trabajos</h2>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mt-2">Galería de Trabajos Reales</h2>
         </div>
         <p class="text-ink/70 max-w-md text-sm leading-relaxed">
-          Cada diseño y estructura es personalizado según el estilo y la anatomía de cada clienta.
+          Cada set se construye de forma artesanal atendiendo a la morfología y salud de tus uñas.
         </p>
       </div>
 
@@ -216,7 +295,7 @@
         
         <!-- Foto 1 -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
-          <img src="./img/softgelnailart.jpeg" alt="Nail Art de Autor en Soft Gel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <img src="./img/softgelnailart.jpeg" alt="Uñas Soft Gel con Nail Art en José C. Paz" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Nail Art & Soft Gel</span>
             <p class="text-ivory font-serif text-lg font-bold">Set Completo con Acabado Brillante</p>
@@ -225,7 +304,7 @@
 
         <!-- Foto 2 -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
-          <img src="./img/capping.jpeg" alt="Capping Gel Natural" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <img src="./img/capping.jpeg" alt="Capping Gel y Esmaltado Semipermanente" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Capping Gel</span>
             <p class="text-ivory font-serif text-lg font-bold">Esmaltado Semipermanente & Protección</p>
@@ -234,34 +313,34 @@
 
         <!-- Foto 3 -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
-          <img src="./img/garritas.jpeg" alt="Garritas Esculpidas de Autor" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <img src="./img/garritas.jpeg" alt="Garritas esculpidas de autor" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Garritas & Estructura</span>
-            <p class="text-ivory font-serif text-lg font-bold">Diseño esculpido con base blanca y transparente</p>
+            <p class="text-ivory font-serif text-lg font-bold">Diseño esculpido artesanal</p>
           </div>
         </div>
 
-        <!-- Foto 4: Masaje Relajante -->
+        <!-- Foto 4 -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
-          <img src="./img/masajes-relajantes.jpg" alt="Sesión de Masaje Relajante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <img src="./img/masajes-relajantes.jpg" alt="Sesión de Masajes Relajantes en José C. Paz" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Home Studio Relax</span>
             <p class="text-ivory font-serif text-lg font-bold">Masaje Relajante</p>
           </div>
         </div>
 
-        <!-- Foto 5: Masaje Descontracturante -->
+        <!-- Foto 5 -->
         <div class="group relative overflow-hidden rounded-2xl bg-ivory-muted border border-ink/10 aspect-square">
-          <img src="./img/masajes-descontracturantes.jpg" alt="Masaje Descontracturante" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <img src="./img/masajes-descontracturantes.jpg" alt="Masaje Descontracturante Corporal" width="600" height="600" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-ink/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
             <span class="text-xs uppercase tracking-widest text-gold font-medium font-schibsted">Bienestar Corporal</span>
             <p class="text-ivory font-serif text-lg font-bold">Masaje Descontracturante</p>
           </div>
         </div>
 
-        <!-- Foto 6 (Call to Instagram) -->
-        <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-8 rounded-2xl bg-ink text-ivory border border-gold/30 hover:border-gold transition-all duration-300 aspect-square text-center group">
-          <span class="text-gold text-xs uppercase tracking-widest font-semibold mb-2 font-schibsted">Instagram Feed</span>
+        <!-- Foto 6 (Instagram) -->
+        <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer nofollow" class="flex flex-col items-center justify-center p-8 rounded-2xl bg-ink text-ivory border border-gold/30 hover:border-gold transition-all duration-300 aspect-square text-center group">
+          <span class="text-gold text-xs uppercase tracking-widest font-semibold mb-2 font-schibsted">Instagram Oficial</span>
           <p class="font-serif text-2xl font-bold group-hover:text-gold transition-colors mb-4">Ver más sets y videos en vivo</p>
           <span class="text-xs text-ivory/60 underline font-public">@julietastudio.jcp &rarr;</span>
         </a>
@@ -270,15 +349,61 @@
     </div>
   </section>
 
-  <!-- UBICACIÓN & INFO -->
-  <section id="ubicacion" class="py-16 bg-ivory-muted/40 border-t border-ink/10 font-public">
+  <!-- SECCIÓN FAQ / PREGUNTAS FRECUENTES (Resuelve el problema de thin content y optimiza GEO / SEO) -->
+  <section id="faq" class="py-24 bg-ivory-muted/40 border-t border-ink/10 font-public">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Dudas Habituales</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-ink mt-2">Preguntas Frecuentes</h2>
+        <p class="text-ink/70 mt-2 text-sm">Información detallada sobre turnos, cuidados y servicios en Julieta Studio.</p>
+      </div>
+
+      <div class="space-y-6">
+        <!-- FAQ 1 -->
+        <div class="p-6 rounded-2xl bg-ivory border border-ink/10">
+          <h3 class="font-serif text-lg font-bold text-ink mb-2">¿Dónde está ubicado el estudio y cómo es la modalidad de atención?</h3>
+          <p class="text-ink/75 text-sm leading-relaxed">
+            Atendemos bajo la modalidad Home Studio privado en <strong>Barrio Alberdi, José C. Paz</strong> (Buenos Aires). Para garantizar la tranquilidad y exclusividad de cada clienta, los turnos se programan con anticipación y la dirección exacta se envía al confirmar la cita.
+          </p>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="p-6 rounded-2xl bg-ivory border border-ink/10">
+          <h3 class="font-serif text-lg font-bold text-ink mb-2">¿Cuál es la diferencia entre Soft Gel, Capping y Garritas?</h3>
+          <p class="text-ink/75 text-sm leading-relaxed">
+            El <strong>Capping</strong> refuerza tu uña natural con una capa de gel estructurador sin extender el largo. El sistema <strong>Soft Gel</strong> permite alargar tus uñas de manera liviana y flexible con tips completos. Las <strong>Garritas</strong> son estructuras esculpidas de mayor longitud y resistencia, ideales para diseños artísticos audaces y personalizados.
+          </p>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="p-6 rounded-2xl bg-ivory border border-ink/10">
+          <h3 class="font-serif text-lg font-bold text-ink mb-2">¿Cuánto tiempo dura el servicio y cada cuánto se realiza el service?</h3>
+          <p class="text-ink/75 text-sm leading-relaxed">
+            Las sesiones de manicura duran entre 60 y 120 minutos dependiendo de la complejidad del nail art. Se recomienda realizar el mantenimiento o service cada 21 a 28 días para mantener la estructura equilibrada y la salud de la uña natural.
+          </p>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="p-6 rounded-2xl bg-ivory border border-ink/10">
+          <h3 class="font-serif text-lg font-bold text-ink mb-2">¿Cómo agendar una sesión de masajes o manicura?</h3>
+          <p class="text-ink/75 text-sm leading-relaxed">
+            Podés reservar tu turno directamente a través de nuestro botón de WhatsApp indicando el servicio deseado y tu preferencia horaria. Respondemos a la brevedad con la disponibilidad de la semana.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UBICACIÓN & CONTACTO -->
+  <section id="ubicacion" class="py-16 bg-ivory border-t border-ink/10 font-public">
     <div class="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
       <div>
-        <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Ubicación & Modalidad</span>
-        <h3 class="font-serif text-2xl font-bold text-ink mt-1">Barrio Alberdi, José C. Paz</h3>
+        <span class="text-xs uppercase tracking-widest text-wine font-semibold font-schibsted">Ubicación & Contacto</span>
+        <h3 class="font-serif text-2xl font-bold text-ink mt-1">Barrio Alberdi, José C. Paz (CP 1665)</h3>
         <p class="text-ink/70 text-sm mt-2">Atención privada en Home Studio con turnos programados.</p>
+        <p class="text-ink/60 text-xs mt-1">WhatsApp de contacto directo: +54 9 11 6001-6022</p>
       </div>
-      <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
+      <a href="https://www.instagram.com/julietastudio.jcp/" target="_blank" rel="noopener noreferrer nofollow" class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-ink text-xs font-semibold uppercase tracking-wider font-schibsted hover:bg-ink hover:text-ivory transition-all duration-300">
         <span>Seguir en Instagram</span>
         <span class="text-wine font-bold">@julietastudio.jcp</span>
       </a>
@@ -292,16 +417,16 @@
         Reservá tu momento en Julieta Studio.
       </h2>
       <p class="text-ivory/70 text-lg mb-10 max-w-xl mx-auto font-light font-public">
-        Escribinos por WhatsApp para consultar días, horarios disponibles o armar tu pack de masajes y uñas.
+        Escribinos por WhatsApp para consultar días, horarios disponibles o armar tu pack de masajes y manicura de autor.
       </p>
-      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20para%20un%20turno." target="_blank" rel="noopener noreferrer" class="inline-block px-10 py-4 rounded-full bg-wine text-ivory font-semibold text-sm tracking-wider uppercase font-schibsted hover:bg-wine-light border border-gold/30 transition-all duration-300 shadow-lg">
+      <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20para%20un%20turno." target="_blank" rel="noopener noreferrer nofollow" class="inline-block px-10 py-4 rounded-full bg-wine text-ivory font-semibold text-sm tracking-wider uppercase font-schibsted hover:bg-wine-light border border-gold/30 transition-all duration-300 shadow-lg">
         Solicitar Turno por WhatsApp
       </a>
     </div>
   </section>
 
   <!-- BOTÓN FLOTANTE DE WHATSAPP -->
-  <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center" title="Chatear por WhatsApp">
+  <a href="https://wa.me/5491160016022?text=%C2%A1Hola%20Julieta%20Studio!%20Quisiera%20consultar%20disponibilidad%20de%20turnos." target="_blank" rel="noopener noreferrer nofollow" class="fixed bottom-6 right-6 z-50 p-4 rounded-full bg-[#25D366] text-white shadow-2xl hover:scale-110 transition-transform duration-300 flex items-center justify-center" title="Chatear por WhatsApp">
     <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" aria-hidden="true">
       <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
     </svg>
@@ -311,7 +436,7 @@
   <footer class="py-10 bg-ink border-t border-white/10 text-center font-public text-xs text-ivory/60 space-y-3">
     <p>© 2026 Julieta Studio · José C. Paz, Buenos Aires.</p>
     <p class="text-gold/80 tracking-widest uppercase text-[10px] font-medium font-schibsted">
-      Diseño Web & Social Media por <span class="text-ivory font-bold">Musse & CO</span>
+      Diseño Web & Social Media por <span class="text-ivory font-bold">Musse & Co</span>
     </p>
   </footer>
 
